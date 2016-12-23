@@ -1,0 +1,94 @@
+body {
+  font-family: "Fira Mono";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.menu {
+  height: 50px;
+}
+
+.menu-anchor {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 40px;
+  height: 32px;
+  background: #fff;
+  cursor: pointer;
+  vertical-align: middle;
+  text-indent: -9999px;
+}
+
+.menu-anchor::before {
+  display: block;
+  width: 70%;
+  height: 0.25em;
+  margin: 7px auto;
+  background: #000;
+  box-shadow: 0 0.45em 0 0 #000, 0 0.9em 0 0 #000;
+  content: "";
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px 50px;
+  font-size: 12px;
+  border-bottom: 1px dotted #ccc;
+  align-items: center;
+}
+
+.profile .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.profile .profile-name {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.profile .profile-description {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: #999;
+}
+
+.post-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.post-list article {
+  display: flex;
+  border-bottom: 1px dotted #ccc;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-list article h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+}
+
+.post-list article span {
+  font-size: 13px;
+  color: #666;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 12px;
+  align-items: center;
+}
